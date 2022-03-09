@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.scu.coen280.hw3">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1219" height="402"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="3388" binding="topLeftPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5039581"/>
+          <enabled value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="3f4ea" binding="mainCategoryPane">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </scrollpane>
+          <scrollpane id="eed70" binding="attributePane">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </scrollpane>
+          <component id="1a65f" class="javax.swing.JButton" binding="getSubcategoryButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Get Subcategory"/>
+            </properties>
+          </component>
+          <component id="f9124" class="javax.swing.JButton" binding="getAttributeButton">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Get Attribute"/>
+            </properties>
+          </component>
+          <component id="62452" class="javax.swing.JComboBox" binding="businessLogicCombo">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="AND"/>
+                <item value="OR"/>
+              </model>
+            </properties>
+          </component>
+          <component id="af0bc" class="javax.swing.JLabel" binding="cityLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="City"/>
+            </properties>
+          </component>
+          <component id="41d9e" class="javax.swing.JTextField" binding="cityField">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <scrollpane id="74f90" binding="subcategoryPane">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="ccf41" binding="botLeftPanel" layout-manager="GridLayoutManager" row-count="8" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="20" bottom="10" right="20"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-1310724"/>
+          <enabled value="false"/>
+          <opaque value="true"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="22161" class="javax.swing.JLabel" binding="memberSinceLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="date_created"/>
+              <text value="Member Since"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="bb086" class="javax.swing.JComboBox" binding="memberSinceCombo">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="68aec" class="javax.swing.JTextField" binding="memberSinceField">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="ebf4f" class="javax.swing.JLabel" binding="reviewCountLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="review_count"/>
+              <text value="Review Count"/>
+            </properties>
+          </component>
+          <component id="7ab2" class="javax.swing.JComboBox" binding="reviewCountCombo">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="baf7c" class="javax.swing.JTextField" binding="reviewCountField">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="a261b" class="javax.swing.JLabel" binding="numOfFriendsLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="num_of_friends"/>
+              <text value="Number of Friends"/>
+            </properties>
+          </component>
+          <component id="574c7" class="javax.swing.JComboBox" binding="numOfFriendsCombo">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="c7b" class="javax.swing.JTextField" binding="numOfFriendsField">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="8e0f0" class="javax.swing.JLabel" binding="avgStarsLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="avg_stars"/>
+              <text value="Average Stars"/>
+            </properties>
+          </component>
+          <component id="e8688" class="javax.swing.JComboBox" binding="avgStarsCombo">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="358f4" class="javax.swing.JTextField" binding="avgStarsField">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="69692" class="javax.swing.JLabel" binding="voteFunnyLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="vote_funny"/>
+              <text value="Vote Funny"/>
+            </properties>
+          </component>
+          <component id="34b51" class="javax.swing.JLabel" binding="voteUsefulLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="vote_useful"/>
+              <text value="Vote Useful"/>
+            </properties>
+          </component>
+          <component id="d2d33" class="javax.swing.JLabel" binding="voteCoolLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="vote_cool"/>
+              <text value="Vote Cool"/>
+            </properties>
+          </component>
+          <component id="69364" class="javax.swing.JComboBox" binding="voteFunnyCombo">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="f129f" class="javax.swing.JComboBox" binding="voteUsefulCombo">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="632d8" class="javax.swing.JComboBox" binding="voteCoolCombo">
+            <constraints>
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="&gt;"/>
+                <item value="&lt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="f886c" class="javax.swing.JTextField" binding="voteFunnyField">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="33d4e" class="javax.swing.JTextField" binding="voteUsefulField">
+            <constraints>
+              <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="5f82e" class="javax.swing.JLabel" binding="logicLabel">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Comic Sans MS" style="1"/>
+              <text value="Logic"/>
+            </properties>
+          </component>
+          <component id="580c0" class="javax.swing.JComboBox" binding="logicCombo">
+            <constraints>
+              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <model>
+                <item value="AND"/>
+                <item value="OR"/>
+              </model>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <component id="4b2a7" class="javax.swing.JTextField" binding="voteCoolField">
+            <constraints>
+              <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="93060" binding="topRightPanel" layout-manager="GridLayoutManager" row-count="2" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6434072"/>
+          <enabled value="false"/>
+          <name value="review_date"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f4765" class="javax.swing.JLabel" binding="reviewFromLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="review_date"/>
+              <text value="Review From"/>
+            </properties>
+          </component>
+          <component id="72702" class="javax.swing.JLabel" binding="reviewToLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="review_date"/>
+              <text value="Review To"/>
+            </properties>
+          </component>
+          <component id="fcf92" class="javax.swing.JTextField" binding="reviewFromField">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <name value=""/>
+              <opaque value="true"/>
+            </properties>
+          </component>
+          <component id="f3441" class="javax.swing.JComboBox" binding="starValueCombo">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="&gt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;"/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+            </properties>
+          </component>
+          <component id="343de" class="javax.swing.JComboBox" binding="voteValueCombo">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="&gt;"/>
+                <item value="&gt;="/>
+                <item value="&lt;"/>
+                <item value="&lt;="/>
+                <item value="="/>
+              </model>
+            </properties>
+          </component>
+          <component id="63d41" class="javax.swing.JTextField" binding="reciewToField">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <name value=""/>
+            </properties>
+          </component>
+          <component id="30acd" class="javax.swing.JLabel" binding="starValueLabel">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="stars"/>
+              <text value="Star Value"/>
+            </properties>
+          </component>
+          <component id="4abf5" class="javax.swing.JLabel" binding="voteValueLabel">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <name value="total_votes"/>
+              <text value="Vote Value"/>
+            </properties>
+          </component>
+          <component id="f2e49" class="javax.swing.JTextField" binding="starValueField">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f2fb1" class="javax.swing.JTextField" binding="voteValueField">
+            <constraints>
+              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="95fc0" binding="botRightPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+        </constraints>
+        <properties>
+          <background color="-923861"/>
+          <enabled value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a3c26" class="javax.swing.JButton" binding="businessButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <text value="Execute Business Query"/>
+            </properties>
+          </component>
+          <scrollpane id="c278f" binding="resultScrollPane">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </scrollpane>
+          <component id="69763" class="javax.swing.JButton" binding="userButton">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Comic Sans MS" style="1"/>
+              <inheritsPopupMenu value="false"/>
+              <text value="Execute User Query"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
