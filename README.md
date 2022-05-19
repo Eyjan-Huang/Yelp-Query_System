@@ -1,4 +1,4 @@
-# yelp-query-system
+# Query System: data from yelp
 
 ## 1. Overview
 This is a simple demo for demonstrating the interaction process of **UI - Middleware - Database** model.
